@@ -1,0 +1,10 @@
+#
+##############################################
+# Author        : QiuWeibo
+# Version       : V1.0.0
+# Date          : 2014-8-5
+# Comment       : script for make busybox for aPM-MCU
+
+#make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- menuconfig
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
+sudo make CONFIG_PREFIX=/home/qiuweibo/workspace/003.aPM.MPU/009.busybox/rootfs install
